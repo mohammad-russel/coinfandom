@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Page</title>
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <!-- CDNs -->
+    <!-- tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- fontawsome  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body class="bg-[#800020]">
+    <div class="container mx-auto  min-h-screen flex flex-col">
+        <!-- Header Section -->
+        <header
+            class="flex items-center justify-between p-4 bg-[#800020] text-[#F7F4C9] fixed top-0 left-0 w-full z-10">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="" class="w-full h-10">
+            </div>
+            <div class="coin text-lg font-bold">
+                400
+            </div>
+        </header>
+
+        <!-- Main Section (Content) -->
+        <main class="flex-1 p-4 bg-[#800020] pt-20 pb-24 overflow-y-auto min-h-screen text-[#F7F4C9]">
+            <!-- Cards Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                <!-- Card 1 -->
+                <div class="card bg-[#F7F4C9] text-[#800020] p-6 rounded-lg shadow-lg">
+                    <div class="title text-lg font-semibold">Task Remain</div>
+                    <div class="number text-2xl font-bold mt-2">Task Remain</div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card bg-[#F7F4C9] text-[#800020] p-6 rounded-lg shadow-lg">
+                    <div class="title text-lg font-semibold">You Have Approx</div>
+                    <div class="number text-2xl font-bold mt-2">10 tk</div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card bg-[#F7F4C9] text-[#800020] p-6 rounded-lg shadow-lg">
+                    <div class="title text-lg font-semibold">Your Membership</div>
+                    <div class="number text-2xl font-bold mt-2">Free</div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card bg-[#F7F4C9] text-[#800020] p-6 rounded-lg shadow-lg">
+                    <div class="title text-lg font-semibold">Your Task Limit</div>
+                    <div class="number text-2xl font-bold mt-2">100</div>
+                </div>
+            </div>
+
+            <!-- Menu Links Section -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 p-4">
+                <!-- Menu Link 1 -->
+                <a href="task.html"
+                    class="link flex flex-col items-center justify-center w-full h-36 bg-[#F7F4C9] text-[#800020] p-4 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-200">
+                    <i class="fas fa-tasks text-3xl" aria-label="Task"></i>
+                    <div class="link-name mt-2 text-sm font-medium">Task</div>
+                </a>
+
+                <!-- Menu Link 2 -->
+                <a href="withdraw.html"
+                    class="link flex flex-col items-center justify-center w-full h-36 bg-[#F7F4C9] text-[#800020] p-4 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-200">
+                    <i class="fas fa-wallet text-3xl" aria-label="Withdraw"></i>
+                    <div class="link-name mt-2 text-sm font-medium">Withdraw</div>
+                </a>
+
+                <!-- Menu Link 3 -->
+                <a href="coin.html"
+                    class="link flex flex-col items-center justify-center w-full h-36 bg-[#F7F4C9] text-[#800020] p-4 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-200">
+                    <i class="fas fa-coins text-3xl" aria-label="Coin"></i>
+                    <div class="link-name mt-2 text-sm font-medium">Coin</div>
+                </a>
+
+                <!-- Menu Link 4 -->
+                <a href="promote.html"
+                    class="link flex flex-col items-center justify-center w-full h-36 bg-[#F7F4C9] text-[#800020] p-4 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-200">
+                    <i class="fas fa-bullhorn text-3xl" aria-label="Promote"></i>
+                    <div class="link-name mt-2 text-sm font-medium">Promote</div>
+                </a>
+
+                <!-- Menu Link 5 -->
+                <a href="membership.html"
+                    class="link flex flex-col items-center justify-center w-full h-36 bg-[#F7F4C9] text-[#800020] p-4 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-200">
+                    <i class="fas fa-crown text-3xl" aria-label="Membership"></i>
+                    <div class="link-name mt-2 text-sm font-medium">Membership</div>
+                </a>
+
+                <!-- Menu Link 6 -->
+                <a href="profile.html"
+                    class="link flex flex-col items-center justify-center w-full h-36 bg-[#F7F4C9] text-[#800020] p-4 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-200">
+                    <i class="fas fa-user text-3xl" aria-label="Profile"></i>
+                    <div class="link-name mt-2 text-sm font-medium">Profile</div>
+                </a>
+
+                <!-- Menu Link 7 -->
+                <a href="logout.html"
+                    class="link flex flex-col items-center justify-center w-full h-36 bg-[#F7F4C9] text-[#800020] p-4 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-200">
+                    <i class="fas fa-logout text-3xl" aria-label="Profile"></i>
+                    <div class="link-name mt-2 text-sm font-medium">Profile</div>
+                </a>
+            </div>
+
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

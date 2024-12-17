@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Page</title>
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <!-- CDNs -->
+    <!-- tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- fontawsome  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body class="bg-[#800020]">
+    <div class="container mx-auto max-w-md min-h-screen flex flex-col">
+        <!-- Header Section -->
+        <header
+            class="flex items-center justify-between p-4 bg-[#800020] text-[#F7F4C9] fixed top-0 left-0 w-full z-10">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="" class="w-full h-10">
+            </div>
+            <div class="coin text-lg font-bold">
+                400
+            </div>
+        </header>
+
+        <!-- Main Section (Content) -->
+        <main class="flex-1 p-4 bg-[#800020] pt-20 pb-90 overflow-y-auto">
+            <div class="tasks grid grid-cols-2 gap-4">
+                <div data-coin="1" data-guide="first of all do this task"
+                    data-link="https://mohammad-russel.github.io/Rasel/"
+                    class="task flex flex-col items-center bg-[#F7F4C9] text-[#800020] shadow-md rounded-lg p-4 hover:shadow-lg">
+                    <div class="icon text-4xl">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </div>
+                    <div class="title mt-2 text-center font-medium">YouTube</div>
+                </div>
+                <div data-coin="2" data-guide="dont do this task"
+                    data-link="https://ww6.gogoanime2.org/anime/sousou-no-frieren-dub"
+                    class="task flex flex-col items-center bg-[#F7F4C9] text-[#800020] shadow-md rounded-lg p-4 hover:shadow-lg">
+                    <div class="icon text-4xl">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </div>
+                    <div class="title mt-2 text-center font-medium">Facebook</div>
+                </div>
+                <div
+                    class="task flex flex-col items-center bg-[#F7F4C9] text-[#800020] shadow-md rounded-lg p-4 hover:shadow-lg">
+                    <div class="icon text-4xl">
+                        <ion-icon name="globe-outline"></ion-icon>
+                    </div>
+                    <div class="title mt-2 text-center font-medium">Website</div>
+                </div>
+                <div
+                    class="task flex flex-col items-center bg-[#F7F4C9] text-[#800020] shadow-md rounded-lg p-4 hover:shadow-lg">
+                    <div class="icon text-4xl">
+                        <ion-icon name="logo-android"></ion-icon>
+                    </div>
+                    <div class="title mt-2 text-center font-medium">App</div>
+                </div>
+            </div>
+            <div class="ads bg-[#F7F4C9] mt-5 w-full flex justify-center items-center h-80">
+
+                <script type="text/javascript">
+                    atOptions = {
+                        'key': 'b5ed1cf002ae1417d6998667bcf470a0',
+                        'format': 'iframe',
+                        'height': 250,
+                        'width': 300,
+                        'params': {}
+                    };
+                </script>
+                <script type="text/javascript"
+                    src="//www.highperformanceformat.com/b5ed1cf002ae1417d6998667bcf470a0/invoke.js"></script>
+            </div>
+        </main>
+
+        <!-- Footer Section (Navigation) -->
+        <nav class="flex justify-between bg-[#800020] text-[#F7F4C9] p-4 fixed bottom-0 left-0 w-full z-10">
+            <a href="./" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <ion-icon name="home-outline"></ion-icon>
+                </div>
+                <div class="title">Home</div>
+            </a>
+            <a href="task.html" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+                <div class="title">Task</div>
+            </a>
+            <a href="coin.html" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <i class="fa-solid fa-coins"></i>
+                </div>
+                <div class="title">Coin</div>
+            </a>
+            <a href="promote.html" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <div class="title">Promote</div>
+            </a>
+            <a href="profile.html" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+                <div class="title">Profile</div>
+            </a>
+        </nav>
+
+        <!-- Popups -->
+        <!-- 1st  confirm -->
+        <div
+            class="task-confirm fixed inset-0 flex-col justify-center items-center bg-red-950 bg-opacity-100 z-20 hidden">
+            <div class="ads bg-[#F7F4C9] mx-auto mb-5 w-full flex justify-center items-center w-80 h-80">
+
+                <script type="text/javascript">
+                    atOptions = {
+                        'key': 'b5ed1cf002ae1417d6998667bcf470a0',
+                        'format': 'iframe',
+                        'height': 250,
+                        'width': 300,
+                        'params': {}
+                    };
+                </script>
+                <script type="text/javascript"
+                    src="//www.highperformanceformat.com/b5ed1cf002ae1417d6998667bcf470a0/invoke.js"></script>
+            </div>
+            <div class="confirm-box bg-[#F7F4C9] w-full max-w-md mx-auto p-6 rounded-lg text-center">
+                <div class="text-2xl font-semibold text-[#800020] mb-6">Are you sure to do this task?</div>
+                <div class="btns flex justify-center space-x-4">
+                    <button
+                        class="confirm-btn px-6 py-3 bg-[#800020] text-white rounded-lg hover:bg-[#660016] focus:outline-none">YES</button>
+                    <button
+                        class="cancel-btn px-6 py-3 bg-[#800020] text-white rounded-lg hover:bg-[#660016] focus:outline-none">NO</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd  guide -->
+        <div
+            class="task-guide fixed inset-0 flex flex-col justify-center items-center bg-red-950 bg-opacity-100 z-30 hidden">
+            <div class="guide-text bg-[#F7F4C9] text-[#800020] p-6 max-w-xl mx-auto rounded-lg text-center">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, alias repellat nisi eligendi
+                perferendis
+                corporis illum inventore rerum officiis explicabo soluta autem voluptatibus recusandae eum? Autem
+                placeat, ut
+                atque facere itaque quibusdam temporibus eos, ex laudantium odio labore optio, rem id veniam. Eligendi,
+                laudantium! Autem eius atque nihil id possimus.
+            </div>
+            <div class="ads bg-[#F7F4C9] mx-auto mt-5 w-full flex justify-center items-center w-80 h-80">
+
+                <script type="text/javascript">
+                    atOptions = {
+                        'key': 'b5ed1cf002ae1417d6998667bcf470a0',
+                        'format': 'iframe',
+                        'height': 250,
+                        'width': 300,
+                        'params': {}
+                    };
+                </script>
+                <script type="text/javascript"
+                    src="//www.highperformanceformat.com/b5ed1cf002ae1417d6998667bcf470a0/invoke.js"></script>
+            </div>
+
+            <button
+                class="understand-btn mt-6 px-6 py-3 bg-[#800020] text-white rounded-lg hover:bg-[#660016] focus:outline-none">
+                I Understand
+            </button>
+        </div>
+
+        <!-- 3rd do -->
+        <div
+            class="task-do fixed inset-0 flex flex-col justify-center items-center bg-[#800020] bg-opacity-100 z-40 hidden">
+
+            <div class="ads bg-[#F7F4C9] mx-auto mb-5 w-full flex justify-center items-center w-80 h-80">
+
+                <script type="text/javascript">
+                    atOptions = {
+                        'key': 'b5ed1cf002ae1417d6998667bcf470a0',
+                        'format': 'iframe',
+                        'height': 250,
+                        'width': 300,
+                        'params': {}
+                    };
+                </script>
+                <script type="text/javascript"
+                    src="//www.highperformanceformat.com/b5ed1cf002ae1417d6998667bcf470a0/invoke.js"></script>
+            </div>
+
+            <a href="#" target="_blank" class="mb-6 main-link">
+                <div class="link-box px-6 py-3 bg-[#F7F4C9] text-[#800020] font-semibold rounded-lg hover:bg-[#F7E7A1]">
+                    Subscribe This Channel
+                </div>
+            </a>
+
+            <div class="auth-box bg-[#F7F4C9] p-6 rounded-lg shadow-lg mb-6 hidden">
+                <label for="ss" class="block text-[#800020] font-semibold mb-2">Upload your full Screenshot here</label>
+                <input type="file" name="ss" id="ss" class="mb-4 p-2 border-2 border-[#800020] rounded-lg">
+                <button
+                    class="submit-btn w-full px-6 py-3 bg-[#800020] text-white rounded-lg hover:bg-[#660016] focus:outline-none">
+                    Submit
+                </button>
+            </div>
+
+            <div
+                class="claim-btn px-6 py-3 bg-[#F7F4C9] text-[#800020] font-semibold rounded-lg hover:bg-[#F7E7A1] hidden">
+                Claim Your Reward
+            </div>
+
+            <div class="ads bg-[#F7F4C9] mx-auto mt-5 w-full flex justify-center items-center w-80 h-80">
+
+                <script type="text/javascript">
+                    atOptions = {
+                        'key': 'b5ed1cf002ae1417d6998667bcf470a0',
+                        'format': 'iframe',
+                        'height': 250,
+                        'width': 300,
+                        'params': {}
+                    };
+                </script>
+                <script type="text/javascript"
+                    src="//www.highperformanceformat.com/b5ed1cf002ae1417d6998667bcf470a0/invoke.js"></script>
+            </div>
+        </div>
+
+        <!-- 4th  complete -->
+        <div
+            class="task-complete fixed inset-0 flex flex-col justify-center items-center bg-[#800020] bg-opacity-100 z-50 hidden">
+            <div
+                class="ads bg-[#F7F4C9] mx-auto mb-5 w-full flex justify-center items-center w-80 h-80 rounded-lg shadow-lg">
+                <script type="text/javascript">
+                    atOptions = {
+                        'key': 'b5ed1cf002ae1417d6998667bcf470a0',
+                        'format': 'iframe',
+                        'height': 250,
+                        'width': 300,
+                        'params': {}
+                    };
+                </script>
+                <script type="text/javascript"
+                    src="//www.highperformanceformat.com/b5ed1cf002ae1417d6998667bcf470a0/invoke.js"></script>
+            </div>
+
+            <div class="congrats text-white text-2xl font-semibold mb-6">
+                Congratulation! You Get <span class="coin-show text-[#F7F4C9]">1</span> Coin
+            </div>
+            <div class="refresh-btn bg-[#F7F4C9] text-[#800020] px-6 py-3 rounded-lg cursor-pointer hover:bg-[#F7E7A1]">
+                Back
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script>
+    $(document).ready(function () {
+        // Show popup
+        $(".task").click(function () {
+            $(".guide-text").html($(this).data('guide'));
+            $(".main-link").attr('href', $(this).data('link'));
+            $(".coin-show").html($(this).data('coin'));
+            $(".task-confirm").removeClass('hidden');
+        });
+
+        // Button actions
+        $(".confirm-btn").click(() => $(".task-guide").removeClass('hidden'));
+        $(".understand-btn").click(() => $(".task-do").removeClass('hidden'));
+        $(".claim-btn").click(() => $(".task-complete").removeClass('hidden'));
+        $(".cancel-btn").click(() => $(".task-confirm").addClass('hidden'));
+        $(".refresh-btn").click(() => location.reload());
+
+        $(".main-link").click(function () {
+            $(this).addClass('hidden');
+            $(".auth-box").removeClass('hidden');
+        });
+
+        $(".submit-btn").click(function () {
+            $(".claim-btn").removeClass('hidden');
+            $(".auth-box").addClass('hidden');
+        });
+    });
+
+</script>
+
+</html>

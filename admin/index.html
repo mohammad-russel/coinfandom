@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary-color: #F7F4C9;
+            --secondary-color: #800020;
+        }
+    </style>
+</head>
+
+<body class="bg-[var(--primary-color)] ">
+    <div class="container mx-auto p-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+
+            <div class="card bg-[var(--secondary-color)] text-[var(--primary-color)] p-4 rounded shadow-md text-center">
+                <div class="title text-lg font-semibold">Total Users</div>
+                <div class="content text-2xl font-bold">300</div>
+            </div>
+
+            <div class="card bg-[var(--secondary-color)] text-[var(--primary-color)] p-4 rounded shadow-md text-center">
+                <div class="title text-lg font-semibold">Total Tasks</div>
+                <div class="content text-2xl font-bold">300</div>
+            </div>
+
+            <div class="card bg-[var(--secondary-color)] text-[var(--primary-color)] p-4 rounded shadow-md text-center">
+                <div class="title text-lg font-semibold">Total Orders</div>
+                <div class="content text-2xl font-bold">300</div>
+            </div>
+
+            <div class="card bg-[var(--secondary-color)] text-[var(--primary-color)] p-4 rounded shadow-md text-center">
+                <div class="title text-lg font-semibold">Total Payments</div>
+                <div class="content text-2xl font-bold">300</div>
+            </div>
+
+            <div class="card bg-[var(--secondary-color)] text-[var(--primary-color)] p-4 rounded shadow-md text-center">
+                <div class="title text-lg font-semibold">Total Pendings</div>
+                <div class="content text-2xl font-bold">300</div>
+            </div>
+
+        </div>
+
+        <!-- Add this line in the <head> section of your HTML file to include Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+        <div class="links mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <a href="manage-blog.html"
+                class="block bg-[var(--secondary-color)] text-[var(--primary-color)] text-center py-3 px-6 rounded shadow-md font-semibold hover:opacity-90">
+                <i class="fas fa-blog mr-2"></i>Manage Blog
+            </a>
+            <a href="manage-coin-order.html"
+                class="block bg-[var(--secondary-color)] text-[var(--primary-color)] text-center py-3 px-6 rounded shadow-md font-semibold hover:opacity-90">
+                <i class="fas fa-coins mr-2"></i>Manage Coin Order
+            </a>
+            <a href="manage-coin.html"
+                class="block bg-[var(--secondary-color)] text-[var(--primary-color)] text-center py-3 px-6 rounded shadow-md font-semibold hover:opacity-90">
+                <i class="fas fa-money-bill-wave mr-2"></i>Manage Coin
+            </a>
+            <a href="manage-memeber-order.html"
+                class="block bg-[var(--secondary-color)] text-[var(--primary-color)] text-center py-3 px-6 rounded shadow-md font-semibold hover:opacity-90">
+                <i class="fas fa-users mr-2"></i>Manage Member
+            </a>
+            <a href="manage-payment.html"
+                class="block bg-[var(--secondary-color)] text-[var(--primary-color)] text-center py-3 px-6 rounded shadow-md font-semibold hover:opacity-90">
+                <i class="fas fa-credit-card mr-2"></i>Manage Payment
+            </a>
+            <a href="manage-task.html"
+                class="block bg-[var(--secondary-color)] text-[var(--primary-color)] text-center py-3 px-6 rounded shadow-md font-semibold hover:opacity-90">
+                <i class="fas fa-tasks mr-2"></i>Manage Task
+            </a>
+            <a href="manage-user.html"
+                class="block bg-[var(--secondary-color)] text-[var(--primary-color)] text-center py-3 px-6 rounded shadow-md font-semibold hover:opacity-90">
+                <i class="fas fa-user mr-2"></i>Manage User
+            </a>
+        </div>
+
+    </div>
+</body>
+
+</html>

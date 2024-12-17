@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coinfandom</title>
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <!-- CDNs -->
+    <!-- tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- fontawsome  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body class="bg-[#800020]">
+    <div class="container mx-auto  min-h-screen flex flex-col">
+        <!-- Header Section -->
+        <header
+            class="flex items-center justify-between p-4 bg-[#800020] text-[#F7F4C9] fixed top-0 left-0 w-full z-10">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="" class="w-full h-10">
+            </div>
+
+            <a class="text-sm p-1 rounded text-[#800020] bg-[#F7F4C9]" href="login.html">Login</a>
+        </header>
+
+        <!-- Main Section (Content) -->
+        <main class="flex-1 bg-[#800020] pt-10 pb-10 overflow-y-auto min-h-screen text-[#F7F4C9]">
+            <div class="bg-[#F7F4C9] py-10 px-4">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-[#800020] text-3xl font-bold mb-6">Latest Posts</h2>
+                    <div class="space-y-6">
+                        <!-- Post 1 -->
+                        <div class="bg-[#800020] p-4 rounded-lg shadow-md">
+                            <div class="flex items-center space-x-4">
+                                <img src="https://via.placeholder.com/100" alt="Post Image"
+                                    class="w-24 h-24 object-cover rounded-lg">
+                                <div>
+                                    <h3 class="text-[#F7F4C9] text-xl font-semibold">Post Title</h3>
+                                    <p class="text-[#F7F4C9] text-sm">By Author | <span class="text-[#F7F4C9]">1 hour
+                                            ago</span></p>
+                                </div>
+                            </div>
+                            <p class="mt-4 text-[#F7F4C9]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Curabitur nec odio lorem...</p>
+                        </div>
+                        <!-- Post 2 -->
+                        <div class="bg-[#800020] p-4 rounded-lg shadow-md">
+                            <div class="flex items-center space-x-4">
+                                <img src="https://via.placeholder.com/100" alt="Post Image"
+                                    class="w-24 h-24 object-cover rounded-lg">
+                                <div>
+                                    <h3 class="text-[#F7F4C9] text-xl font-semibold">Post Title</h3>
+                                    <p class="text-[#F7F4C9] text-sm">By Author | <span class="text-[#F7F4C9]">1 hour
+                                            ago</span></p>
+                                </div>
+                            </div>
+                            <p class="mt-4 text-[#F7F4C9]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Curabitur nec odio lorem...</p>
+                        </div>
+                        <!-- Post 3 -->
+                        <div class="bg-[#800020] p-4 rounded-lg shadow-md">
+                            <div class="flex items-center space-x-4">
+                                <img src="https://via.placeholder.com/100" alt="Post Image"
+                                    class="w-24 h-24 object-cover rounded-lg">
+                                <div>
+                                    <h3 class="text-[#F7F4C9] text-xl font-semibold">Post Title</h3>
+                                    <p class="text-[#F7F4C9] text-sm">By Author | <span class="text-[#F7F4C9]">1 hour
+                                            ago</span></p>
+                                </div>
+                            </div>
+                            <p class="mt-4 text-[#F7F4C9]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Curabitur nec odio lorem...</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+        <!-- nav  -->
+        <nav class="flex justify-between bg-[#800020] text-[#F7F4C9] p-4 fixed bottom-0 left-0 w-full z-10">
+            <!-- Home -->
+            <a href="./" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <ion-icon name="home-outline"></ion-icon>
+                </div>
+                <div class="title">Home</div>
+            </a>
+
+            <!-- Blog -->
+            <a href="blog.html" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <ion-icon name="document-text-outline"></ion-icon>
+                </div>
+                <div class="title">Blog</div>
+            </a>
+
+            <!-- How -->
+            <a href="htw.html" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <ion-icon name="help-circle-outline"></ion-icon>
+                </div>
+                <div class="title">How</div>
+            </a>
+
+            <!-- Policy -->
+            <a href="policy.html" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <ion-icon name="megaphone-outline"></ion-icon>
+                </div>
+                <div class="title">Policy</div>
+            </a>
+
+            <!-- Terms -->
+            <a href="terms.html" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <ion-icon name="document-outline"></ion-icon>
+                </div>
+                <div class="title">Terms</div>
+            </a>
+        </nav>
+
+    </div>
+
+</body>
+
+</html>

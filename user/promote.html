@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promote</title>
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <!-- CDNs -->
+    <!-- tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- fontawsome  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body class="bg-[#800020]">
+    <div class="container mx-auto max-w-md min-h-screen flex flex-col">
+        <!-- Header Section -->
+        <header
+            class="flex items-center justify-between p-4 bg-[#800020] text-[#F7F4C9] fixed top-0 left-0 w-full z-10">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="" class="w-full h-10">
+            </div>
+            <div class="coin text-lg font-bold">
+                400
+            </div>
+        </header>
+
+        <!-- Main Section (Content) -->
+        <main class="flex-1 p-4 bg-[#800020] pt-20 pb-90 overflow-y-auto">
+            <div class="max-w-xl mx-auto bg-[#800020] text-[#F7F4C9] p-6 rounded-lg shadow-lg">
+                <h1 class="text-3xl font-bold mb-6 text-center">Promote</h1>
+                <form action="/submit-task" method="POST" class="flex flex-col items-center gap-4">
+                    <!-- Task Selection -->
+                    <select id="task-select" name="task"
+                        class="w-80 p-3 border border-[#F7F4C9] rounded-lg bg-[#F7F4C9] text-[#800020] placeholder-[#F7F4C9] focus:outline-none focus:ring-2 focus:ring-[#F7F4C9] focus:border-transparent"
+                        required>
+                        <option value="" disabled selected>Choose a Task</option>
+                        <option value="facebook-like">Facebook, Instagram, Twitter Like</option>
+                        <option value="facebook-comment">Facebook, Instagram, Twitter Comment</option>
+                        <option value="facebook-share">Facebook, Instagram, Twitter Share</option>
+                        <option value="facebook-follow">Facebook, Instagram, Twitter Follow</option>
+                        <option value="youtube-watch">YouTube Video Watch</option>
+                        <option value="youtube-like">YouTube Video Like</option>
+                        <option value="youtube-subscribe">YouTube Channel Subscribe</option>
+                        <option value="website-visit">Website Visit</option>
+                        <option value="website-comment">Website Comment</option>
+                        <option value="website-signup">Website Signup</option>
+                        <option value="website-submit-form">Website Submit Form</option>
+                        <option value="app-download">App Download</option>
+                        <option value="app-review">App Review</option>
+                        <option value="product-review">Product Review</option>
+                        <option value="survey-complete">Survey Complete</option>
+                        <option value="group-post">Create Post on Group</option>
+                        <option value="buy-product">Buy Product</option>
+                        <option value="google-search">Google Search Website</option>
+                    </select>
+
+                    <!-- Goal Input -->
+                    <input type="number" id="goal-input" name="goal" placeholder="Enter your goal (e.g., 100)"
+                        class="w-80 p-3 border border-[#F7F4C9] rounded-lg bg-transparent text-[#F7F4C9] placeholder-[#F7F4C9] focus:outline-none focus:ring-2 focus:ring-[#F7F4C9] focus:border-transparent"
+                        required>
+
+                    <!-- CPA Input -->
+                    <input type="text" id="cpa-input" name="cpa" placeholder="Enter CPA value"
+                        class="w-80 p-3 border border-[#F7F4C9] rounded-lg bg-transparent text-[#F7F4C9] placeholder-[#F7F4C9] focus:outline-none focus:ring-2 focus:ring-[#F7F4C9] focus:border-transparent"
+                        required>
+
+                    <!-- URL Input -->
+                    <input type="url" id="url-input" name="url" placeholder="Enter URL (e.g., https://example.com)"
+                        class="w-80 p-3 border border-[#F7F4C9] rounded-lg bg-transparent text-[#F7F4C9] placeholder-[#F7F4C9] focus:outline-none focus:ring-2 focus:ring-[#F7F4C9] focus:border-transparent"
+                        required>
+
+                    <!-- Submit Button -->
+                    <button type="submit" id="submit-task" name="submit-task"
+                        class="w-80 bg-[#F7F4C9] text-[#800020] font-semibold py-3 rounded-lg hover:bg-[#800020] hover:text-[#F7F4C9] border-2 border-[#F7F4C9] transition-all">
+                        Submit Task
+                    </button>
+                </form>
+            </div>
+        </main>
+
+
+        <!-- Footer Section (Navigation) -->
+        <nav class="flex justify-between bg-[#800020] text-[#F7F4C9] p-4 fixed bottom-0 left-0 w-full z-10">
+            <a href="./" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <ion-icon name="home-outline"></ion-icon>
+                </div>
+                <div class="title">Home</div>
+            </a>
+            <a href="task.html" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+                <div class="title">Task</div>
+            </a>
+            <a href="coin.html" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <i class="fa-solid fa-coins"></i>
+                </div>
+                <div class="title">Coin</div>
+            </a>
+            <a href="promote.html" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <div class="title">Promote</div>
+            </a>
+            <a href="profile.html" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+                <div class="title">Profile</div>
+            </a>
+        </nav>
+
+        <!-- Popups -->
+
+
+    </div>
+
+</body>
+<script>
+    $(document).ready(function () {
+        function updateButton() {
+            // Get the values of CPA and Goal
+            let cpa = parseFloat($('#cpa-input').val());
+            let goal = parseFloat($('#goal-input').val());
+
+            // Calculate the need
+            if (!isNaN(cpa) && !isNaN(goal)) {
+                let need = cpa * goal;
+                // Update the button text
+                $('#submit-task').text(`Submit Task (Need: ${need})`);
+            } else {
+                // Reset button text if input is invalid
+                $('#submit-task').text('Submit Task');
+            }
+        }
+
+        // Attach event listeners to input fields
+        $('#cpa-input, #goal-input').on('input', updateButton);
+    });
+
+</script>
+
+</html>

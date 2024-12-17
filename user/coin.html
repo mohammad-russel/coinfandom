@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Page</title>
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <!-- CDNs -->
+    <!-- tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- fontawsome  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body class="bg-[#800020]">
+    <div class="container mx-auto max-w-md min-h-screen flex flex-col">
+        <!-- Header Section -->
+        <header
+            class="flex items-center justify-between p-4 bg-[#800020] text-[#F7F4C9] fixed top-0 left-0 w-full z-10">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="" class="w-full h-10">
+            </div>
+            <div class="coin text-lg font-bold">
+                400
+            </div>
+        </header>
+
+        <!-- Main Section (Content) -->
+        <main class="flex-1 p-4 bg-[#800020] pt-20 pb-24 overflow-y-auto min-h-screen text-[#F7F4C9]">
+            <h1 class="text-3xl font-bold mb-6 text-center">Buy Coins</h1>
+            <form action="#" method="post" class="flex flex-col items-center gap-4">
+                <input type="number" name="coin-input" id="coin-input" placeholder="How many coins do you want?"
+                    class="w-80 p-3 border border-[#F7F4C9] rounded-lg bg-transparent text-[#F7F4C9] placeholder-[#F7F4C9] focus:outline-none focus:ring-2 focus:ring-[#F7F4C9] focus:border-transparent">
+                <button type="submit" id="pay" name="pay"
+                    class="w-80 bg-[#F7F4C9] text-[#800020] font-semibold py-3 rounded-lg hover:bg-[#800020] hover:text-[#F7F4C9] border-2 border-[#F7F4C9] transition-all">
+                    Pay
+                </button>
+            </form>
+            <div class="ads bg-[#F7F4C9] mt-5 w-full flex justify-center items-center h-80">
+
+                <script type="text/javascript">
+                    atOptions = {
+                        'key': 'b5ed1cf002ae1417d6998667bcf470a0',
+                        'format': 'iframe',
+                        'height': 250,
+                        'width': 300,
+                        'params': {}
+                    };
+                </script>
+                <script type="text/javascript"
+                    src="//www.highperformanceformat.com/b5ed1cf002ae1417d6998667bcf470a0/invoke.js"></script>
+            </div>
+        </main>
+
+        <!-- Footer Section (Navigation) -->
+        <nav class="flex justify-between bg-[#800020] text-[#F7F4C9] p-4 fixed bottom-0 left-0 w-full z-10">
+            <a href="./" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <ion-icon name="home-outline"></ion-icon>
+                </div>
+                <div class="title">Home</div>
+            </a>
+            <a href="task.html" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+                <div class="title">Task</div>
+            </a>
+            <a href="coin.html" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <i class="fa-solid fa-coins"></i>
+                </div>
+                <div class="title">Coin</div>
+            </a>
+            <a href="promote.html" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <div class="title">Promote</div>
+            </a>
+            <a href="profile.html" class="flex flex-col items-center text-sm hover:text-yellow-500">
+                <div class="icon text-xl">
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+                <div class="title">Profile</div>
+            </a>
+        </nav>
+
+        <!-- Popups -->
+
+    </div>
+
+</body>
+<script>
+    $(document).ready(function () {
+        const conversionRate = 3;
+        $('#coin-input').on('keyup', function () {
+            const coinValue = parseInt($(this).val()) || 0;
+            const amount = (coinValue / conversionRate).toFixed(2);
+            $('#pay').text(`Pay ৳${amount}`);
+        });
+    });
+
+</script>
+
+</html>
