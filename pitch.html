@@ -4,248 +4,291 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoinFandom 2.0 Pitch Deck</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.10.1/dist/cdn.min.js" defer></script>
+    <title>CoinFandom - Pitch Deck</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .gradient-background {
-            background: linear-gradient(90deg, rgba(255, 0, 150, 1) 0%, rgba(0, 204, 255, 1) 100%);
-        }
-    </style>
 </head>
 
-<body class="font-sans antialiased bg-gray-100">
+<body class="bg-gradient-to-t from-blue-500 via-purple-500 to-pink-500 text-white font-sans">
 
-    <!-- হেডার সেকশন -->
-    <header class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-10 text-white text-center">
-        <h1 class="text-3xl font-bold">CoinFandom Pitch Deck</h1>
-        <p class="mt-4 text-lg">Earn, Promote, and Grow Together</p>
+    <!-- Header Section -->
+    <header class="py-10 bg-gradient-to-t from-pink-500 to-blue-500 text-center">
+        <h1 class="text-4xl font-bold">CoinFandom</h1>
+        <p class="mt-4 text-lg">A platform bridging social media promotion and side income opportunities.</p>
     </header>
 
-    <!-- সমস্যা সেকশন -->
-    <section class="gradient-background p-8 text-white">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-semibold">১. সমস্যা</h2>
-            <ul class="list-disc ml-8 mt-4 space-y-2">
-                <li><strong>সোশ্যাল মিডিয়াতে বিশ্বাস গড়তে শুরুতেই চ্যালেঞ্জ :</strong> যখন মানুষ কোনো পেজ থেকে কিছু
-                    কিনতে যায়, তখন যদি পেজে কম কমেন্ট, রিভিউ বা ফলোয়ার থাকে, তখন তারা সেই পেজে ট্রাস্ট করতে বেশ
-                    সমস্যায় পড়ে। </li>
-                <li><strong>অনলাইনে সাইড ইনকাম করতে চ্যালেঞ্জ :</strong> অনলাইনে সাইড ইনকাম করতে চাওয়ার পরেও অনেকেই নানা
-                    সমস্যার মুখোমুখি হন, যেমন কম আয়, ওয়িথড্রঅল সমস্যা, সময়ের অপচয় এবং অতিরিক্ত ঝামেলা।
-                </li>
-            </ul>
-        </div>
-    </section>
+    <!-- About Section -->
+    <section class="py-16 bg-gradient-to-t from-green-500 to-pink-500 text-white">
+        <div class="max-w-6xl mx-auto px-8">
+            <h2 class="text-4xl font-extrabold text-center mb-10">Problem & Solution</h2>
 
-    <!-- সমাধান সেকশন -->
-    <section class="bg-white p-8">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-semibold mb-4">২. সমাধান</h2>
-            <p class="text-lg mb-4">CoinFandom একটি প্ল্যাটফর্ম অফার করে যা <strong>প্রমোটারদের(ছোট ব্যবসা এবং
-                    ইনফ্লুয়েন্সারদের)</strong> সাশ্রয়ী মূল্যে তাদের সোশ্যাল মিডিয়া উপস্থিতি বাড়াতে সাহায্য করে।
-                এছাড়াও, <strong>আর্নারদের(স্টুডেন্ট, হাউসওয়াইফ এবং যারা সাইড ইনকাম করতে চান)</strong> তাদের জন্য সহজ
-                কাজের
-                মাধ্যমে
-                আয় অর্জন করার সুযোগ প্রদান করে।</p>
-            <div class="grid grid-cols-2 gap-8">
-                <div>
-                    <h3 class="text-xl font-semibold">প্রমোটারদের জন্য</h3>
-                    <p>আপনি সোশ্যাল মিডিয়া প্ল্যাটফর্ম যেমন ফেসবুক, ইনস্টাগ্রাম, টুইটার, এবং ইউটিউবে এনগেজমেন্ট বাড়াতে
-                        <strong>কয়েন</strong> কিনে আপনার ফেসবুক পেজ, পোস্ট, ভিডিও, এবং অন্যান্য কনটেন্ট প্রমোট করতে
-                        পারেন। এটি আপনার সোশ্যাল মিডিয়া উপস্থিতি দ্রুত বৃদ্ধি করতে সাহায্য করবে।
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold">আর্নারদের জন্য</h3>
-                    <p>আপনি সহজ কাজ যেমন পোস্টে লাইক দেয়া বা ভিডিও দেখা সম্পন্ন করে <strong>কয়েন</strong> উপার্জন করতে
-                        পারেন। এই কয়েনগুলোকে টাকা হিসেবে উত্তোলন করতে পারবেন, যা আপনাকে সাইড ইনকাম অর্জনের সুযোগ দেয়।
-                    </p>
-                </div>
+            <!-- Problem 1 -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold mb-4">Problem: Lack of Accessible Earning Opportunities</h3>
+                <p class="text-lg mb-4">Many individuals, especially students and housewives, struggle to find
+                    accessible and flexible ways to earn money online. Traditional freelance platforms often require
+                    specialized skills or significant time investment, making it difficult for beginners or those with
+                    limited experience to participate.</p>
+                <p class="text-lg mb-4">Furthermore, low-paying micro-task platforms often fail to provide consistent
+                    work or adequate compensation, leaving users disillusioned with online earning potential.</p>
+                <h4 class="text-xl font-semibold mt-6">Solution: Easy, Quick, and Accessible Tasks</h4>
+                <p class="text-lg">CoinFandom offers a platform where users can earn by completing simple tasks that
+                    require no prior experience. By focusing on easy-to-perform tasks such as liking posts, sharing
+                    content, or engaging with social media, CoinFandom provides an accessible entry point for anyone
+                    looking to earn extra income, regardless of their skillset.</p>
             </div>
 
-        </div>
-    </section>
+            <!-- Problem 2 -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold mb-4">Problem: Difficulty in Gaining Social Media Engagement</h3>
+                <p class="text-lg mb-4">For many individuals starting their social media journey, building an audience
+                    and gaining engagement is challenging. Small creators or businesses often struggle to gain
+                    visibility and credibility, which is crucial for growth and success on platforms like Instagram,
+                    Facebook, and YouTube.</p>
+                <h4 class="text-xl font-semibold mt-6">Solution: Affordable Social Media Engagement</h4>
+                <p class="text-lg">CoinFandom helps users gain authentic social media engagement by offering affordable
+                    services such as likes, shares, and follows. Through the platform, individuals can boost their
+                    social media presence, attract more followers, and increase their credibility, all while earning
+                    money by completing tasks for others.</p>
+            </div>
 
-    <!-- টার্গেট অডিয়ান্স সেকশন -->
-    <section class="gradient-background p-8 text-white">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-semibold">৩. টার্গেট অডিয়ান্স</h2>
-            <div class="grid grid-cols-2 gap-8 mt-4">
-                <div>
-                    <h3 class="text-xl font-semibold">প্রমোটাররা</h3>
-                    <ul class="list-disc ml-8">
-                        <li>ছোট ব্যবসায়ীরা</li>
-                        <li>সোশ্যাল মিডিয়া ইনফ্লুয়েন্সাররা</li>
-                        <li>ই-কমার্স ব্রান্ডগুলো</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold">আর্নাররা</h3>
-                    <ul class="list-disc ml-8">
-                        <li>ছাত্রছাত্রীরা</li>
-                        <li>গৃহিণীরা</li>
-                        <li>সাইড ইনকাম খোঁজার লোকেরা</li>
-                    </ul>
-                </div>
+            <!-- Problem 3 -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold mb-4">Problem: Limited Opportunities for Quick Payment and Instant
+                    Rewards</h3>
+                <p class="text-lg mb-4">Many platforms that offer micro-tasks have slow payout processes, leaving users
+                    waiting for weeks or even months to receive their hard-earned money. This delay can be discouraging
+                    and demotivating for people who rely on quick payouts for their daily expenses.</p>
+                <h4 class="text-xl font-semibold mt-6">Solution: Instant Payments for Completed Tasks</h4>
+                <p class="text-lg">At CoinFandom, users can receive their earnings quickly after completing tasks. With
+                    a seamless payment system and low payout thresholds, CoinFandom ensures that its users can access
+                    their earnings as soon as possible, making it an ideal solution for those who need instant rewards
+                    for their time and effort.</p>
+            </div>
+
+            <!-- Problem 4 -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-4">Problem: Lack of Transparency and Trust in Online Earning
+                    Platforms</h3>
+                <p class="text-lg mb-4">Many online earning platforms suffer from a lack of transparency, leaving users
+                    uncertain about the legitimacy of the platform and whether they will receive their payments on time.
+                    Fraudulent practices and unresponsive customer support are common complaints in the online earning
+                    industry.</p>
+                <h4 class="text-xl font-semibold mt-6">Solution: Transparent Platform with Verified Tasks and Earnings
+                </h4>
+                <p class="text-lg">CoinFandom promotes trust and transparency by providing clear guidelines, verified
+                    tasks, and regular payment updates. The platform ensures that users can track their earnings, see
+                    task completion progress, and enjoy reliable customer support when needed.</p>
             </div>
         </div>
     </section>
 
-    <!-- মার্কেট সাইজ সেকশন -->
-    <section class="bg-white p-8">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-semibold">৪. মার্কেট সাইজ</h2>
-            <ul class="list-disc ml-8 mt-4 space-y-2">
-                <li><strong>বর্ধিত ডিজিটাল এনগেজমেন্ট মার্কেট:</strong> বাংলাদেশে ৯০ মিলিয়নের বেশি ইন্টারনেট
-                    ব্যবহারকারী।</li>
-                <li><strong>সাইড ইনকামের সম্ভাবনা:</strong> উচ্চ যুব unemployment এবং নমনীয় কাজের চাহিদা।</li>
-                <li><strong>প্রোমোটার সেগমেন্ট:</strong> বাংলাদেশে ছোট ব্যবসার সংখ্যা বৃদ্ধি এবং ডিজিটাল মার্কেটিংয়ের
-                    প্রতি ঝোঁক। <br>
-                    <strong>বিশ্বব্যাপী সামাজিক মিডিয়া বিজ্ঞাপন বাজার:</strong> ২০২৮ সালের মধ্যে ২৩১ বিলিয়ন ডলার
-                    ছাড়ানোর প্রত্যাশা, যার মধ্যে বাংলাদেশ মত ছোট বাজারগুলোর জন্য বড় অংশ থাকবে।
-                </li>
-                <li><strong>আর্নার সেগমেন্ট:</strong> বাংলাদেশের ছাত্র এবং পার্টটাইম কর্মীদের সংখ্যা বিপুল, যা মিলিয়ন-এ
-                    পৌঁছাতে পারে। <br>
-                    <strong>উচ্চশিক্ষা ছাত্রসংখ্যা:</strong> ১০ মিলিয়ন। <br>
-                    <strong>পার্টটাইম অনলাইন কাজের জন্য আগ্রহী সাইড ইনকাম প্রার্থীর সংখ্যা:</strong> যদি ১০% আগ্রহী হন,
-                    তবে সম্ভাব্য টার্গেট হবে ১ মিলিয়ন ব্যক্তি।
-                </li>
+    <!-- Promoters Section -->
+    <section class="py-16 bg-gradient-to-t from-teal-400 to-green-500 ">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-semibold mb-6 text-left">For Promoters</h2>
+            <p class="leading-relaxed text-left">
+                Promoters—individuals or businesses—use CoinFandom to gain social media engagement across platforms like
+                Facebook, Instagram, and YouTube. By purchasing coins, they can achieve likes, shares, follows, video
+                views, or website visits effortlessly.
+            </p>
+            <ul class="mt-6 list-disc list-inside">
+                <li>Purchase coins via mobile banking.</li>
+                <li>Launch campaigns targeting specific goals.</li>
+                <li>Automatic campaign termination once goals are met.</li>
             </ul>
         </div>
     </section>
 
-    <!-- ব্যবসায়িক মডেল সেকশন -->
-    <section class="gradient-background p-8 text-white">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-semibold">৫. ব্যবসায়িক মডেল</h2>
-            <table class="min-w-full mt-4 bg-transparent border-collapse">
+    <!-- Earners Section -->
+    <section class="py-16 bg-gradient-to-t from-teal-400 to-teal-400">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-semibold mb-6 text-left">For Earners</h2>
+            <p class="leading-relaxed text-left">
+                Earners, including students and housewives, can earn by completing simple tasks such as liking, sharing,
+                or commenting on posts. Earners can withdraw coins within 24 hours.
+            </p>
+            <ul class="mt-6 list-disc list-inside">
+                <li>Earn 0.340 Taka per task.</li>
+                <li>Tasks include social media, surveys, and app interactions.</li>
+                <li>Receive reliable payouts quickly.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Revenue Section -->
+    <section class="py-16 bg-gradient-to-t from-purple-400  to-teal-400">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Revenue Sources</h2>
+            <p class="leading-relaxed text-center">CoinFandom generates revenue through the following:</p>
+            <ul class="mt-6 list-disc list-inside">
+                <li>Display Advertisements</li>
+                <li>Membership Fees</li>
+                <li>Withdrawal Fees</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Membership Tiers Section -->
+    <section class="py-16 bg-gradient-to-t from-purple-600  to-purple-400">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-semibold mb-6">Membership Tiers</h2>
+            <table class="table-auto w-full border border-white text-center mt-8">
                 <thead>
-                    <tr class="text-left">
-                        <th class="px-4 py-2 border-b">রেভেনিউ সোর্স</th>
-                        <th class="px-4 py-2 border-b">বিস্তারিত</th>
+                    <tr class="bg-white text-black">
+                        <th class="px-4 py-2">Plan</th>
+                        <th class="px-4 py-2">Cost</th>
+                        <th class="px-4 py-2">Task Limit</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="px-4 py-2 border-b">ডিসপ্লে এডস</td>
-                        <td class="px-4 py-2 border-b">টাস্ক চলাকালীন আডস থেকে ইম্প্রেশন এবং সেখান থেকে আয়।
-                        </td>
+                        <td class="px-4 py-2">Free</td>
+                        <td class="px-4 py-2">0 Taka</td>
+                        <td class="px-4 py-2">100</td>
                     </tr>
                     <tr>
-                        <td class="px-4 py-2 border-b">সদস্যপদ ফি</td>
-                        <td class="px-4 py-2 border-b">পেইড প্ল্যানগুলির মাধ্যমে উচ্চতর টাস্ক সীমা এবং উন্নত আয়ের সুযোগ।
-                        </td>
+                        <td class="px-4 py-2">Part-Time</td>
+                        <td class="px-4 py-2">500 Taka</td>
+                        <td class="px-4 py-2">350</td>
                     </tr>
                     <tr>
-                        <td class="px-4 py-2 border-b">উত্তোলন ফি</td>
-                        <td class="px-4 py-2 border-b">ব্যবহারকারীরা তাদের কয়েন ব্যালেন্স থেকে আয় উত্তোলন করতে ছোট ফি
-                            প্রদান করেন।</td>
+                        <td class="px-4 py-2">Full-Time</td>
+                        <td class="px-4 py-2">1,000 Taka</td>
+                        <td class="px-4 py-2">700</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
 
+    <!-- calculate  -->
+    <section class="py-16 bg-gradient-to-t from-blue-500 to-purple-600 text-white">
+        <div class="max-w-6xl mx-auto px-8">
+            <h2 class="text-4xl font-extrabold text-center mb-10">Daily Financial Insights</h2>
 
-    <!-- আর্থিক পূর্বাভাস সেকশন -->
-    <section class="bg-white p-8">
-        <div class="max-w-4xl mx-auto">
-            <!-- শিরোনাম এবং বর্ণনা -->
-            <h2 class="text-3xl font-semibold text-left">৬. আর্থিক পূর্বাভাস</h2>
-            <p class="mt-4 text-left text-lg">বিজ্ঞাপন রাজস্ব, টাস্ক সীমার বৃদ্ধি এবং স্কেলেবিলিটি CoinFandom-এর জন্য
-                পুনরাবৃত্ত আয়ের প্রবাহ অফার করে।</p>
+            <!-- Calculation Insights -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold mb-6">Financial Metrics and Calculations</h3>
+                <div class="space-y-8">
+                    <div>
+                        <h4 class="text-xl font-semibold">Total Tasks Completed</h4>
+                        <p class="text-lg">Calculation: 1,000 × 50</p>
+                        <p class="text-lg">Result: 50,000 tasks</p>
+                    </div>
 
-            <!-- রাজস্ব হিসাব কার্ড -->
-            <div class="mt-8 space-y-6">
-                <!-- বিজ্ঞাপন রাজস্ব -->
-                <div class="gradient-background text-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold">বিজ্ঞাপন রাজস্ব</h3>
-                    <p class="mt-2">প্রতিটি টাস্ক ১০টি ইম্প্রেশন তৈরি করে, এবং প্রতি ১,০০০ ইম্প্রেশন-এর জন্য CoinFandom
-                        প্রায় $০.৪ উপার্জন করে।</p>
-                    <div class="mt-4 text-lg">
-                        <strong>প্রতিটি টাস্কের রাজস্ব:</strong> $০.০০৪ প্রতি টাস্ক
-                        <br>
-                        <strong>৫০০ আর্নারের জন্য দৈনিক রাজস্ব:</strong> $২/দিন
-                        <br>
-                        <strong>মাসিক রাজস্ব (৩০ দিন):</strong> $৬০/মাস
+                    <div>
+                        <h4 class="text-xl font-semibold">Impressions Generated</h4>
+                        <p class="text-lg">Calculation: 50,000 × 10</p>
+                        <p class="text-lg">Result: 500,000 impressions</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xl font-semibold">Ad Revenue</h4>
+                        <p class="text-lg">Calculation: 500,000 ÷ 1,000 × 40</p>
+                        <p class="text-lg">Result: 20,000 Taka</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xl font-semibold">Earner Payments</h4>
+                        <p class="text-lg">Calculation: 50,000 × 0.340</p>
+                        <p class="text-lg">Result: 17,000 Taka</p>
+                    </div>
+
+                    <div class="font-bold">
+                        <h4 class="text-xl">Daily Profit</h4>
+                        <p class="text-lg">Calculation: 20,000 - 17,000</p>
+                        <p class="text-lg">Result: 3,000 Taka</p>
                     </div>
                 </div>
+            </div>
 
-                <!-- টাস্ক সীমা বৃদ্ধি -->
-                <div class="gradient-background text-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold">টাস্ক সীমা বৃদ্ধি</h3>
-                    <p class="mt-2">পেইড সদস্যপদ পরিকল্পনা বাস্তবায়ন করার মাধ্যমে রাজস্ব বৃদ্ধি পেতে পারে, যেহেতু
-                        ব্যবহারকারীরা আরও টাস্ক সম্পন্ন করতে সক্ষম হয়।</p>
-                    <div class="mt-4 text-lg">
-                        <strong>পেইড সদস্যদের সাথে রাজস্ব:</strong>
-                        <br>
-                        ২০০ পেইড সদস্য ১.৫ গুণ বেশি টাস্ক সম্পন্ন করে $৬০১.২/দিন উপার্জন করে
-                        <br>
-                        <strong>পেইড সদস্যদের সাথে মাসিক রাজস্ব:</strong> $১৮,০৩৬/মাস
-                    </div>
-                </div>
-
-                <!-- স্কেলেবিলিটি -->
-                <div class="gradient-background text-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold">স্কেলেবিলিটি</h3>
-                    <p class="mt-2">যেহেতু CoinFandom তার ব্যবহারকারীর সংখ্যা (প্রমোটার এবং আর্নার) বৃদ্ধি পাচ্ছে,
-                        বিজ্ঞাপন রাজস্ব এবং সদস্যপদ ফি থেকে আয়ের প্রবাহ বৃদ্ধি পাবে।</p>
-                    <div class="mt-4 text-lg">
-                        <strong>স্কেলেবল রাজস্ব প্রবাহ:</strong> আরও ব্যবহারকারী মানে আরও টাস্ক, আরও ইম্প্রেশন, এবং
-                        উচ্চতর রাজস্ব।
-                        <br>
-                        ব্যবহারকারীর সংখ্যা বৃদ্ধি পেলে, **বিজ্ঞাপন রাজস্ব** এবং **সদস্যপদ ফি** অব্যাহতভাবে বৃদ্ধি পাবে।
-                    </div>
-                </div>
+            <!-- Analysis -->
+            <div class="mt-10">
+                <h3 class="text-2xl font-semibold mb-4">Revenue-Expense Analysis</h3>
+                <p class="mb-2">Earned through display ads, each task generates 10 impressions, resulting in 500,000
+                    daily impressions. At a rate of 40 Taka per 1,000 impressions, the daily ad revenue is <span
+                        class="font-bold">20,000 Taka</span>.</p>
+                <p class="mb-2">Expenses include payments to earners at 0.340 Taka per task, resulting in <span
+                        class="font-bold">17,000 Taka</span> in daily costs.</p>
+                <p class="mb-2">The profit margin is a healthy <span class="font-bold">15%</span>, indicating scalable
+                    operations with room for growth.</p>
             </div>
         </div>
     </section>
 
-    <!-- ট্র্যাকশন সেকশন -->
-    <section class="gradient-background p-8 text-white">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-semibold">৭. ট্র্যাকশন</h2>
-            <ul class="list-disc ml-8 mt-4 space-y-2">
-                <li>ছাত্র, গৃহিণী এবং ছোট ব্যবসায়ীদের কাছ থেকে প্রাথমিক ব্যবহারকারীর গ্রহণযোগ্যতা।</li>
-                <li>টাস্ক ইম্প্রেশন থেকে বিজ্ঞাপন রাজস্ব উৎপাদন।</li>
-                <li>গুরুতর টাস্ক সম্পন্নের সাথে উচ্চ এনগেজমেন্ট রেট।</li>
-            </ul>
+    <!-- Marketing Strategy Section -->
+    <section class="py-16 bg-gradient-to-t from-purple-600  to-blue-500">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Marketing Strategy</h2>
+            <ol class="list-decimal list-inside">
+                <li><span class="font-bold">Earner Arc:</span> Focused on attracting earners with targeted ads.</li>
+                <li><span class="font-bold">Promoter Arc:</span> Ads designed for promoters seeking cost-effective
+                    solutions.</li>
+                <li><span class="font-bold">Brand Arc:</span> Campaigns to establish credibility and brand awareness.
+                </li>
+            </ol>
         </div>
     </section>
 
-    <!-- প্রতিযোগিতামূলক সুবিধা সেকশন -->
-    <section class="bg-white p-8">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-semibold">৮. প্রতিযোগিতামূলক সুবিধা</h2>
-            <ul class="list-disc ml-8 mt-4 space-y-2">
-                <li>সাশ্রয়ী ও স্কেলেবল প্ল্যাটফর্ম কম প্রবেশ খরচের সাথে।</li>
-                <li>স্বয়ংক্রিয় প্রচারণা সম্পন্নকরণের মাধ্যমে নিশ্চিত ফলাফল।</li>
-                <li>প্রতিদিনের পেমেন্ট সহ বহুমুখী আয়ের মডেল।</li>
-                <li>বাংলাদেশের বাজারের চাহিদা অনুযায়ী বিশেষভাবে প্রস্তুত।</li>
-            </ul>
+    <!-- funding  -->
+    <section class="py-16 bg-gradient-to-t from-purple-900 to-purple-600 text-white">
+        <div class="max-w-5xl mx-auto px-8">
+            <h2 class="text-4xl font-extrabold text-center mb-10">Funding Breakdown</h2>
+
+            <!-- Funding Breakdown -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold mb-6">Why We Need 80,000 Taka</h3>
+                <p class="text-lg mb-4">CoinFandom aims to deliver a unique and scalable platform. To ensure its
+                    success and smooth launch, we have carefully allocated funds across essential areas. Here's why we
+                    need the total 80,000 Taka:</p>
+
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-xl font-semibold">Development</h4>
+                        <p class="text-lg">Amount: 20,000 Taka</p>
+                        <p class="text-lg">Purpose: Continued platform development (backend, frontend, bug fixes,
+                            infrastructure)</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xl font-semibold">Domain & Hosting</h4>
+                        <p class="text-lg">Amount: 15,000 Taka</p>
+                        <p class="text-lg">Purpose: Domain registration, hosting services, SSL certificate</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xl font-semibold">Marketing</h4>
+                        <p class="text-lg">Amount: 15,000 Taka</p>
+                        <p class="text-lg">Purpose: Paid ads, influencer collaborations, social media campaigns</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xl font-semibold">Risk Mitigation & Payments</h4>
+                        <p class="text-lg">Amount: 30,000 Taka</p>
+                        <p class="text-lg">Purpose: Reserve fund for earner payments and unforeseen expenses</p>
+                    </div>
+
+                    <div class="font-bold">
+                        <h4 class="text-xl">Total Funds Needed</h4>
+                        <p class="text-lg">Amount: 80,000 Taka</p>
+                        <p class="text-lg">Purpose: Total for platform launch and operations</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Explanation -->
+            <div>
+                <p class="mt-4 text-lg">With your investment, CoinFandom will be positioned for success, ensuring
+                    the platform operates smoothly while generating a profitable and scalable model.</p>
+            </div>
         </div>
     </section>
 
-    <!-- অর্থায়ন অনুরোধ সেকশন -->
-    <section class="gradient-background p-8 text-white">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-semibold">৯. অর্থায়ন অনুরোধ</h2>
-            <ul class="list-disc ml-8 mt-4 space-y-2">
-                <li><strong>প্রয়োজনীয় বিনিয়োগ:</strong> ৮০,০০০ টাকা, যা ডেভেলপমেন্ট, মার্কেটিং এবং অপারেশনাল খরচে
-                    ব্যবহার হবে।</li>
-                <li><strong>অর্থ ব্যবহারের উদ্দেশ্য:</strong> প্ল্যাটফর্ম উন্নয়ন, মার্কেটিং, অপারেশনাল খরচ এবং স্টাফ
-                    স্যালারি।</li>
-            </ul>
-        </div>
-    </section>
 
-    <!-- ফুটার -->
-    <footer class="bg-gray-800 text-white text-center p-6 mt-10">
-        <p>&copy; 2024 CoinFandom.com copywirte licence
+    <!-- Footer Section -->
+    <footer class="py-10 bg-gray-900 text-center">
+        <p class="text-sm">&copy; 2024 CoinFandom.com All rights reserved.</p>
     </footer>
-
-
 </body>
 
 </html>
